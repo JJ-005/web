@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore six fictional Northline desk essentials in a responsive product collection.">
+  <title>Desk essentials | Northline</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
+  <style>
+    :root { color-scheme: light; --ink: #172d40; --muted: #4f6272; }
+    body { margin: 0; background: #f3f6fa; color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1rem; line-height: 1.6; }
+    .brand-bar { background: var(--ink); color: white; padding-block: 1.1rem; }
+    .brand { margin: 0; font-weight: 750; letter-spacing: .16em; }
+    .intro { padding-block: 2.5rem 1.75rem; }
+    .eyebrow { color: var(--muted); font-size: .875rem;
+      font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 750;
+      line-height: 1.15; letter-spacing: -.035em; margin-bottom: .8rem; }
+    .intro p:last-child { max-width: 42rem; color: var(--muted); margin: 0; }
+    .product-card { border: 1px solid #d5dfe8; border-radius: 1rem;
+      overflow: hidden; background: white; }
+    .product-image { display: block; width: 100%; height: auto;
+      aspect-ratio: 3 / 2; object-fit: contain; background: #e8eef4; }
+    .card-body { padding: 1.5rem; }
+    .product-number { color: var(--muted); font-size: .875rem;
+      letter-spacing: .08em; margin-bottom: .5rem; }
+    h2 { font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
+    .description { color: var(--muted); margin-bottom: 0; }
+    footer { padding-block: 2rem; color: var(--muted); font-size: .875rem; }
+    .skip-link { position: absolute; top: .75rem; left: .75rem;
+      z-index: 10; transform: translateY(-200%); background: white;
+      color: var(--ink); padding: .75rem 1rem; border-radius: .25rem; }
+    .skip-link:focus { transform: translateY(0); }
+    :focus-visible { outline: 3px solid #b44b0b; outline-offset: 4px; }
+    #products:focus { outline-offset: 6px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#products">Skip to products</a>
+  <header class="brand-bar">
+    <div class="container"><p class="brand">NORTHLINE</p></div>
+  </header>
+  <div class="container intro">
+    <p class="eyebrow">The everyday collection / 01</p>
+    <h1>Make room for focus.</h1>
+    <p>Six considered essentials for a calmer, more comfortable desk.</p>
+  </div>
+  <!-- Bootstrap alone controls the responsive column widths. -->
+  <main id="products" class="container" tabindex="-1" aria-label="Desk essentials">
+    <div class="row g-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="lamp-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Cpath d='M116 201h128' stroke='%23172d40' stroke-width='12' stroke-linecap='round'/%3E%3Cpath d='M178 197V114l43-39' fill='none' stroke='%23172d40' stroke-width='9'/%3E%3Cpath d='m210 55 43 39-68 17z' fill='%23496d85'/%3E%3Ccircle cx='178' cy='114' r='10' fill='%23c27845'/%3E%3C/svg%3E"
+            alt="Blue angled desk lamp with a slim navy stand and round copper joint.">
+          <div class="card-body">
+            <p class="product-number">01 / LIGHT</p>
+            <h2 id="lamp-title">Arc Desk Lamp</h2>
+            <p class="description">An adjustable reading light with a compact base, designed to leave more room for your notes.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="headphones-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Cpath d='M113 147V115a67 67 0 0 1 134 0v32' fill='none' stroke='%23172d40' stroke-width='17'/%3E%3Crect x='99' y='123' width='40' height='72' rx='18' fill='%23496d85'/%3E%3Crect x='221' y='123' width='40' height='72' rx='18' fill='%23496d85'/%3E%3Cpath d='M119 141v34m122-34v34' stroke='%23d6e2ec' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E"
+            alt="Navy over-ear headphones with blue padded ear cups and a curved headband.">
+          <div class="card-body">
+            <p class="product-number">02 / SOUND</p>
+            <h2 id="headphones-title">Quiet Headphones</h2>
+            <p class="description">Soft over-ear cushions and a lightweight headband for listening through a focused afternoon.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="notebook-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Crect x='115' y='40' width='132' height='166' rx='8' fill='%23172d40'/%3E%3Crect x='110' y='34' width='130' height='166' rx='8' fill='%23496d85'/%3E%3Cpath d='M131 35v165' stroke='%23172d40' stroke-width='5'/%3E%3Cpath d='M152 83h58m-58 14h43' stroke='%23d6e2ec' stroke-width='4'/%3E%3Cpath d='M213 35v113l-9-8-9 8V35' fill='%23c27845'/%3E%3C/svg%3E"
+            alt="Blue hardback notebook with a dark spine and copper ribbon bookmark.">
+          <div class="card-body">
+            <p class="product-number">03 / NOTES</p>
+            <h2 id="notebook-title">Field Notebook</h2>
+            <p class="description">A durable cloth-style cover and generous pages for daily plans, sketches and ideas worth keeping.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="cup-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Cpath d='M220 93h19a29 29 0 0 1 0 58h-19' fill='none' stroke='%23496d85' stroke-width='13'/%3E%3Cpath d='M116 79h108v85a26 26 0 0 1-26 26h-56a26 26 0 0 1-26-26z' fill='%23496d85'/%3E%3Cellipse cx='170' cy='79' rx='54' ry='12' fill='%23172d40'/%3E%3Cpath d='M146 48v-15m25 15v-22m25 22v-15' stroke='%23c27845' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"
+            alt="Blue ceramic cup with a rounded handle and three warm steam marks.">
+          <div class="card-body">
+            <p class="product-number">04 / PAUSE</p>
+            <h2 id="cup-title">Pause Ceramic Cup</h2>
+            <p class="description">A comfortable handle and smooth glazed finish for a warm drink between your next two ideas.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="stand-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Cpath d='m92 89 177-25-24 82-133 15z' fill='%23496d85'/%3E%3Cpath d='m107 96 147-20-17 58-119 14z' fill='%23d6e2ec'/%3E%3Cpath d='m171 155-25 40h86' fill='none' stroke='%23172d40' stroke-width='10' stroke-linejoin='round'/%3E%3Cpath d='m106 164 151-18' stroke='%23c27845' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E"
+            alt="Open blue laptop resting on an angled navy stand with a copper front lip.">
+          <div class="card-body">
+            <p class="product-number">05 / ELEVATE</p>
+            <h2 id="stand-title">Lift Laptop Stand</h2>
+            <p class="description">An open, angled support that raises your screen while keeping the space beneath it clear.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <article class="card product-card h-100" aria-labelledby="tray-title">
+          <img class="product-image" width="360" height="240"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 240'%3E%3Crect x='72' y='71' width='216' height='109' rx='23' fill='%23172d40'/%3E%3Crect x='81' y='77' width='198' height='92' rx='17' fill='%23496d85'/%3E%3Cpath d='M199 78v89' stroke='%23172d40' stroke-width='7'/%3E%3Cpath d='m105 137 61-39m-51 50 61-39' stroke='%23d6e2ec' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='239' cy='122' r='18' fill='none' stroke='%23c27845' stroke-width='7'/%3E%3C/svg%3E"
+            alt="Divided blue desk tray holding two pale pens and a copper circular accessory.">
+          <div class="card-body">
+            <p class="product-number">06 / ORGANISE</p>
+            <h2 id="tray-title">Tidy Desk Tray</h2>
+            <p class="description">Two simple compartments keep pens and small accessories together, with everything easy to find.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <p class="mb-0">Northline is a fictional collection. All product illustrations are original.</p>
+  </footer>
+</body>
+</html>
