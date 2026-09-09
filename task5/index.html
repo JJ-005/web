@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue 3 Two-Way Data Binding Demo</title>
+  <style>
+    body{font:16px/1.55 system-ui,sans-serif;margin:0;background:#f6f7f9;color:#1f2937}
+    main{max-width:680px;margin:2rem auto;padding:1.5rem;background:#fff;border-radius:12px}
+    label{display:block;font-weight:700;margin-bottom:.4rem}
+    input{box-sizing:border-box;width:100%;padding:.7rem;border:1px solid #9ca3af;border-radius:6px}
+    button{margin-top:1rem;padding:.65rem 1rem;cursor:pointer}
+    input:focus-visible,button:focus-visible{outline:3px solid #111827;outline-offset:3px}
+    output{display:block;margin-top:.6rem;padding:.7rem;background:#eef2f7;border-radius:6px;min-height:1.5rem}
+    .note{font-size:.92rem;color:#4b5563}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Vue 3 Two-Way Data Binding</h1>
+  <div id="app">
+    <label for="message">Message</label>
+    <input id="message" v-model="text" type="text" autocomplete="off">
+    <h2>Live value</h2>
+    <output for="message" aria-live="polite">{{ text }}</output>
+    <button type="button" @click="reset">Reset</button>
+    <p class="note">This demo stores data only in browser memory and sends nothing to a server. Internet connectivity is required to load Vue from the CDN.</p>
+  </div>
+</main>
+
+<script src="https://unpkg.com/vue@3.5.42/dist/vue.global.prod.js"></script>
+<script>
+  const { createApp, ref } = Vue;
+  createApp({
+    setup() {
+      const initial = 'Hello from Vue 3!';
+      const text = ref(initial);
+      const reset = () => { text.value = initial; };
+      return { text, reset };
+    }
+  }).mount('#app');
+</script>
+</body>
+</html>
